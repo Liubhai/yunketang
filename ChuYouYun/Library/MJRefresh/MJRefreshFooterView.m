@@ -68,7 +68,7 @@
     CGFloat scrollHeight = self.scrollView.mj_height - self.scrollViewOriginalInset.top - self.scrollViewOriginalInset.bottom;
     // 设置位置和尺寸
     //self.mj_y = MAX(contentHeight, scrollHeight);  //这个是三方控件原来的位置
-    self.mj_y = MAX(contentHeight, scrollHeight) - 30; //这个是我自己修改后的位置
+    self.mj_y = MAX(contentHeight, scrollHeight); //这个是我自己修改后的位置
 }
 
 #pragma mark 监听UIScrollView的属性

@@ -756,8 +756,8 @@
 
 - (void)footMore {
     Number ++;
-//    [self netWorkGoodsGetCategoryDowning:Number];
-//    [self netWorkGoodsGetList:Number];
+    [self netWorkGoodsGetCategoryDowning:Number];
+    [self netWorkGoodsGetList:Number];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [_tableView footerEndRefreshing];
         [_tableView reloadData];
@@ -789,11 +789,11 @@
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
     UIView *footView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, MainScreenWidth, 10)];
     footView.backgroundColor = [UIColor groupTableViewBackgroundColor];
-    return footView;
+    return nil;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 10;
+    return 0.001;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -823,18 +823,18 @@
         
         if ((cellH + SpaceBaside) * (Count / 2) <= MainScreenHeight - 64 - titleViewH) {
             cellHWithOutData = MainScreenHeight - 64 - titleViewH;
-            return MainScreenHeight - 64 - titleViewH;
+            return MainScreenHeight - 64 - titleViewH + 10;
         } else {
-            return (cellH + SpaceBaside) * (Count / 2);
+            return (cellH + SpaceBaside) * (Count / 2) + 10;
         }
 
     } else {
         
         if ((cellH + SpaceBaside) * (Count / 2 + 1) <= MainScreenHeight - 64 - titleViewH) {
             cellHWithOutData = MainScreenHeight - 64 - titleViewH;
-            return MainScreenHeight - 64 - titleViewH;
+            return MainScreenHeight - 64 - titleViewH + 10;
         } else {
-            return (cellH + SpaceBaside) * (Count / 2 + 1);
+            return (cellH + SpaceBaside) * (Count / 2 + 1) + 10;
         }
     }
 }
@@ -923,7 +923,6 @@
     adVc.titleStr = [_titleArray objectAtIndex:index];
     [self.navigationController pushViewController:adVc animated:YES];
 }
-
 
 #pragma mark --- 事件点击
 - (void)rankButtonClick:(UIButton *)button {

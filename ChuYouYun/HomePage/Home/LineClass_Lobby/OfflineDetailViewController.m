@@ -1030,7 +1030,7 @@
         if ([[dict stringValueForKey:@"code"] integerValue] == 1) {
             NSDictionary *dict = [YunKeTang_Api_Tool YunKeTang_Api_Tool_GetDecodeStr_Before:responseObject];
             if ([[dict stringValueForKey:@"code"] integerValue] == 1) {
-                if ([[dict arrayValueForKey:@"code"] isKindOfClass:[NSArray class]] ) {
+                if ([[dict arrayValueForKey:@"data"] isKindOfClass:[NSArray class]] ) {
                     _commentArray = [dict arrayValueForKey:@"data"];
                 } else {
                     _commentArray = (NSArray *)[YunKeTang_Api_Tool YunKeTang_Api_Tool_GetDecodeStr:responseObject];

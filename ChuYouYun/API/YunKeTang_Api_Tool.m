@@ -131,9 +131,34 @@
     return urlStr;
 }
 
-
-
-
-
++ (id)YunKeTang_Api_Tool_GetDecodeStrFromData:(id)responseObject {
+    NSString *receiveStr = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
+    NSData * receiveData = [receiveStr dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:receiveData options:NSJSONReadingMutableLeaves error:nil];
+    
+    if ([[jsonDict stringValueForKey:@"code"] integerValue] == 0) {
+        return jsonDict;
+    }
+    
+    NSString *dataStr = [jsonDict stringValueForKey:@"data"];
+    if (dataStr == nil) {
+        return nil;
+    }
+    if ([dataStr isKindOfClass:[NSArray class]]) {
+        return (NSArray *)dataStr;
+    }
+    if ([dataStr isKindOfClass:[NSDictionary class]]) {
+        return (NSDictionary *)dataStr;
+    }
+    dataStr = [dataStr stringByReplacingOccurrencesOfString:@"-" withString:@"+"];
+    dataStr = [dataStr stringByReplacingOccurrencesOfString:@"_" withString:@"/"];
+    
+    NSString *decodeStr = [NSString descryptAES:dataStr key:NetKey];
+    NSString *fromStr = [decodeStr substringFromIndex:11];
+    SBJsonParser* json =[[SBJsonParser alloc]init];
+    NSMutableDictionary* dic =[json objectWithString:fromStr];
+    
+    return dic;
+}
 
 @end

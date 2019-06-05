@@ -132,6 +132,11 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     _allScrollView.contentSize = CGSizeMake(0, 1000);
     [self.view addSubview:_allScrollView];
+    if (@available(iOS 11.0, *)) {
+        _allScrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
     
 }
 
@@ -292,10 +297,14 @@
     
     
     TeacherCommentViewController * teacherCommentVc = [[TeacherCommentViewController alloc] initWithNumID:_ID];
-    teacherCommentVc.view.frame = CGRectMake(MainScreenWidth * 2, -64, MainScreenWidth, MainScreenHeight * 2 + 500 * WideEachUnit);
+    teacherCommentVc.view.frame = CGRectMake(MainScreenWidth * 2, 0, MainScreenWidth, MainScreenHeight * 2 + 500 * WideEachUnit);
     [self addChildViewController:teacherCommentVc];
     [_controllerSrcollView addSubview:teacherCommentVc.view];
-    
+    if (@available(iOS 11.0, *)) {
+        _controllerSrcollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
 }
 
 
@@ -713,10 +722,6 @@
     }];
     [op start];
 }
-
-
-
-
 
 
 

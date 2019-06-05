@@ -454,6 +454,9 @@
 		50BACB591A709E7300E2B8A4 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BACAC71A709E7200E2B8A4 /* UIWebView+AFNetworking.m */; };
 		50DAE3AD1AB03290005B4B15 /* blumCatalogList.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DAE3AC1AB03290005B4B15 /* blumCatalogList.m */; };
 		7587B0D31B0DDD9600E39062 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7587B0D21B0DDD9600E39062 /* MZTimerLabel.m */; };
+		783A6CD722A772550002665A /* BCEDocumentReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783A6CD122A772550002665A /* BCEDocumentReader.framework */; };
+		783A6CD822A772550002665A /* libZipArchive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 783A6CD622A772550002665A /* libZipArchive.a */; };
+		783A6CDA22A772B60002665A /* DocPlayerSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 783A6CD922A772B50002665A /* DocPlayerSDK.bundle */; };
 		81039AB11D8137740014C936 /* GSMJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 81039A871D8137740014C936 /* GSMJRefreshAutoFooter.m */; };
 		81039AB21D8137740014C936 /* GSMJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 81039A891D8137740014C936 /* GSMJRefreshBackFooter.m */; };
 		81039AB31D8137740014C936 /* GSMJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 81039A8B1D8137740014C936 /* GSMJRefreshComponent.m */; };
@@ -1281,8 +1284,6 @@
 		81AEB7F72281617900F97858 /* MyTeacherManageReservationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AEB7F62281617900F97858 /* MyTeacherManageReservationViewController.m */; };
 		81AEB7FA2281618E00F97858 /* MyTeacherManageCompleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AEB7F92281618E00F97858 /* MyTeacherManageCompleteViewController.m */; };
 		81AEBE3F21AB915A00402AE6 /* OnlyLoginDealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AEBE3E21AB915A00402AE6 /* OnlyLoginDealViewController.m */; };
-		81B301E6227EDE69005B1D34 /* BCEDocumentReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81B301E0227EDE68005B1D34 /* BCEDocumentReader.framework */; };
-		81B301E7227EDE69005B1D34 /* libZipArchive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81B301E5227EDE68005B1D34 /* libZipArchive.a */; };
 		81C4DE0E21B1240B00A7CAD6 /* BuyAgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C4DE0D21B1240A00A7CAD6 /* BuyAgreementViewController.m */; };
 		81C4DE5A21B1246500A7CAD6 /* biaoqing_68.png in Resources */ = {isa = PBXBuildFile; fileRef = 81C4DE1121B1246400A7CAD6 /* biaoqing_68.png */; };
 		81C4DE5B21B1246500A7CAD6 /* biaoqing_40.png in Resources */ = {isa = PBXBuildFile; fileRef = 81C4DE1221B1246400A7CAD6 /* biaoqing_40.png */; };
@@ -2454,6 +2455,10 @@
 		50DAE3AC1AB03290005B4B15 /* blumCatalogList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = blumCatalogList.m; sourceTree = "<group>"; };
 		7587B0D11B0DDD9600E39062 /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTimerLabel.h; sourceTree = "<group>"; };
 		7587B0D21B0DDD9600E39062 /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
+		783A6CD122A772550002665A /* BCEDocumentReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BCEDocumentReader.framework; sourceTree = "<group>"; };
+		783A6CD422A772550002665A /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		783A6CD622A772550002665A /* libZipArchive.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libZipArchive.a; sourceTree = "<group>"; };
+		783A6CD922A772B50002665A /* DocPlayerSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DocPlayerSDK.bundle; path = BCEDocumentReader.framework/Resources/DocPlayerSDK.bundle; sourceTree = "<group>"; };
 		81039A861D8137740014C936 /* GSMJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSMJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		81039A871D8137740014C936 /* GSMJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSMJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		81039A881D8137740014C936 /* GSMJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSMJRefreshBackFooter.h; sourceTree = "<group>"; };
@@ -3763,9 +3768,6 @@
 		81AEB7F92281618E00F97858 /* MyTeacherManageCompleteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTeacherManageCompleteViewController.m; sourceTree = "<group>"; };
 		81AEBE3D21AB915A00402AE6 /* OnlyLoginDealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnlyLoginDealViewController.h; sourceTree = "<group>"; };
 		81AEBE3E21AB915A00402AE6 /* OnlyLoginDealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnlyLoginDealViewController.m; sourceTree = "<group>"; };
-		81B301E0227EDE68005B1D34 /* BCEDocumentReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BCEDocumentReader.framework; sourceTree = "<group>"; };
-		81B301E3227EDE68005B1D34 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
-		81B301E5227EDE68005B1D34 /* libZipArchive.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libZipArchive.a; sourceTree = "<group>"; };
 		81C4DE0C21B1240A00A7CAD6 /* BuyAgreementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyAgreementViewController.h; sourceTree = "<group>"; };
 		81C4DE0D21B1240A00A7CAD6 /* BuyAgreementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyAgreementViewController.m; sourceTree = "<group>"; };
 		81C4DE1121B1246400A7CAD6 /* biaoqing_68.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = biaoqing_68.png; sourceTree = "<group>"; };
@@ -4428,7 +4430,6 @@
 				81FD073A1D1795E2008D88DF /* TencentOpenAPI.framework in Frameworks */,
 				09FBE1C8214B56A70032AA2C /* libz.1.1.3.tbd in Frameworks */,
 				8126EE5721D63A42008C8547 /* WebRTC.framework in Frameworks */,
-				81B301E6227EDE69005B1D34 /* BCEDocumentReader.framework in Frameworks */,
 				81FD073C1D1795E2008D88DF /* libSocialWechat.a in Frameworks */,
 				50446F791AE09A180048300D /* libcrypto.a in Frameworks */,
 				0927F4B821D6369600BFBD91 /* AliyunVodPlayerSDK.framework in Frameworks */,
@@ -4436,6 +4437,7 @@
 				50446F7A1AE09A180048300D /* libssl.a in Frameworks */,
 				50446F831AE09E250048300D /* AlipaySDK.bundle in Frameworks */,
 				097DC26F21D632850060C974 /* AliyunVodPlayerSDK.framework in Frameworks */,
+				783A6CD722A772550002665A /* BCEDocumentReader.framework in Frameworks */,
 				50446F721AE09A180048300D /* AlipaySDK.framework in Frameworks */,
 				81FD07371D1795E2008D88DF /* libWeiboSDK.a in Frameworks */,
 				8126EE9D21D63A55008C8547 /* WebRTC.framework in Frameworks */,
@@ -4449,9 +4451,9 @@
 				0927F4BA21D6369600BFBD91 /* AliyunPlayerSDK.framework in Frameworks */,
 				815988622293E05000140E59 /* libcrypto.a in Frameworks */,
 				81F2086F1D0CFA5C001D2874 /* libWeChatSDK.a in Frameworks */,
+				783A6CD822A772550002665A /* libZipArchive.a in Frameworks */,
 				507A03301ADB51D400EB5C77 /* CoreText.framework in Frameworks */,
 				94D2D6AE1A70AF7700CD7C5C /* CoreGraphics.framework in Frameworks */,
-				81B301E7227EDE69005B1D34 /* libZipArchive.a in Frameworks */,
 				09FBE1CA214B582D0032AA2C /* libbz2.tbd in Frameworks */,
 				506C70F11AA9863800427A76 /* libstdc++.dylib in Frameworks */,
 				94D2D7171A70DC1800CD7C5C /* Foundation.framework in Frameworks */,
@@ -6105,7 +6107,7 @@
 		50BACA3B1A709E7200E2B8A4 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				81B301DF227EDE68005B1D34 /* Baidu-DocReader-SDK-iOS-2-2 */,
+				783A6CD022A772550002665A /* Baidu-DocReader-SDK-iOS-2.3.0 */,
 				09EEBB2A20C543B80014D5CF /* 进度条（Progress） */,
 				09E0AF30206B454A009788C8 /* WMPlayer */,
 				09E0AF0D206B44BD009788C8 /* SDCycleScrollView */,
@@ -6261,6 +6263,41 @@
 				7587B0D21B0DDD9600E39062 /* MZTimerLabel.m */,
 			);
 			path = MZTimerLabel;
+			sourceTree = "<group>";
+		};
+		783A6CD022A772550002665A /* Baidu-DocReader-SDK-iOS-2.3.0 */ = {
+			isa = PBXGroup;
+			children = (
+				783A6CD922A772B50002665A /* DocPlayerSDK.bundle */,
+				783A6CD122A772550002665A /* BCEDocumentReader.framework */,
+				783A6CD222A772550002665A /* vendor */,
+			);
+			path = "Baidu-DocReader-SDK-iOS-2.3.0";
+			sourceTree = "<group>";
+		};
+		783A6CD222A772550002665A /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				783A6CD322A772550002665A /* include */,
+				783A6CD522A772550002665A /* lib */,
+			);
+			path = vendor;
+			sourceTree = "<group>";
+		};
+		783A6CD322A772550002665A /* include */ = {
+			isa = PBXGroup;
+			children = (
+				783A6CD422A772550002665A /* ZipArchive.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		783A6CD522A772550002665A /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				783A6CD622A772550002665A /* libZipArchive.a */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 		81039A841D8137740014C936 /* GSMJRefresh */ = {
@@ -9649,40 +9686,6 @@
 			path = Only_Login;
 			sourceTree = "<group>";
 		};
-		81B301DF227EDE68005B1D34 /* Baidu-DocReader-SDK-iOS-2-2 */ = {
-			isa = PBXGroup;
-			children = (
-				81B301E0227EDE68005B1D34 /* BCEDocumentReader.framework */,
-				81B301E1227EDE68005B1D34 /* vendor */,
-			);
-			path = "Baidu-DocReader-SDK-iOS-2-2";
-			sourceTree = "<group>";
-		};
-		81B301E1227EDE68005B1D34 /* vendor */ = {
-			isa = PBXGroup;
-			children = (
-				81B301E2227EDE68005B1D34 /* include */,
-				81B301E4227EDE68005B1D34 /* lib */,
-			);
-			path = vendor;
-			sourceTree = "<group>";
-		};
-		81B301E2227EDE68005B1D34 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				81B301E3227EDE68005B1D34 /* ZipArchive.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		81B301E4227EDE68005B1D34 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				81B301E5227EDE68005B1D34 /* libZipArchive.a */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
 		81C4DE0B21B1240A00A7CAD6 /* AgreeOn */ = {
 			isa = PBXGroup;
 			children = (
@@ -10702,6 +10705,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				"zh-Hans",
@@ -11072,6 +11076,7 @@
 				09309FE61F2B2A6F00349840 /* tab_home_pre@2x.png in Resources */,
 				8126ED1C21D63A42008C8547 /* home_ic_beauty_nor@3x.png in Resources */,
 				8126ED4021D63A42008C8547 /* 012@2x.png in Resources */,
+				783A6CDA22A772B60002665A /* DocPlayerSDK.bundle in Resources */,
 				819CDFCE2264896B00AFA698 /* me_no_press@2x.png in Resources */,
 				F19EC0D51C8D14270094C2A4 /* caidao.png in Resources */,
 				815EFE2121AE8E690026D35F /* xiamianREd.png in Resources */,
@@ -12549,6 +12554,7 @@
 					"$(PROJECT_DIR)/ChuYouYun/Play_SDK",
 					"$(PROJECT_DIR)/ChuYouYun/Library/Baidu-DocReader-SDK-iOS-2",
 					"$(PROJECT_DIR)/ChuYouYun/Library/Baidu-DocReader-SDK-iOS-2-2",
+					"$(PROJECT_DIR)/ChuYouYun/Library/Baidu-DocReader-SDK-iOS-2.3.0",
 				);
 				GCC_INPUT_FILETYPE = automatic;
 				HEADER_SEARCH_PATHS = (
@@ -12589,6 +12595,7 @@
 					"$(PROJECT_DIR)/ChuYouYun/Library/Baidu-DocReader-SDK-iOS-2/vendor/lib",
 					"$(PROJECT_DIR)/ChuYouYun/Library/Baidu-DocReader-SDK-iOS-2-2/vendor/lib",
 					"$(PROJECT_DIR)/ChuYouYun/Tool(工具)/JVSRSAHandler/openssl/lib",
+					"$(PROJECT_DIR)/ChuYouYun/Library/Baidu-DocReader-SDK-iOS-2.3.0/vendor/lib",
 				);
 				MACH_O_TYPE = mh_execute;
 				ONLY_ACTIVE_ARCH = YES;
@@ -12597,6 +12604,7 @@
 					"\"$(SRCROOT)/ChuYouYun/Library/umeng_ios_social_sdk_5.2-2.1_arm64_custom/UMSocial_Sdk_Extra_Frameworks/SinaSSO/libWeiboSDK.a\"",
 					"\"$(SRCROOT)/ChuYouYun/Library/umeng_ios_social_sdk_5.2-2.1_arm64_custom/UMSocial_Sdk_Extra_Frameworks/SinaSSO/libSocialSinaSSO.a\"",
 					"$(inherited)",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ZhiYicx.YunKeTang;
 				PRODUCT_NAME = Eduline;
@@ -12604,7 +12612,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "armv7s armv7 arm64";
+				VALID_ARCHS = "armv7s armv7 arm64 armv6 i386/x86_64";
 			};
 			name = Debug;
 		};
@@ -12615,7 +12623,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5QQ23A4NX6;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -12644,6 +12652,7 @@
 					"$(PROJECT_DIR)/ChuYouYun/Play_SDK",
 					"$(PROJECT_DIR)/ChuYouYun/Library/Baidu-DocReader-SDK-iOS-2",
 					"$(PROJECT_DIR)/ChuYouYun/Library/Baidu-DocReader-SDK-iOS-2-2",
+					"$(PROJECT_DIR)/ChuYouYun/Library/Baidu-DocReader-SDK-iOS-2.3.0",
 				);
 				GCC_INPUT_FILETYPE = automatic;
 				HEADER_SEARCH_PATHS = (
@@ -12684,6 +12693,7 @@
 					"$(PROJECT_DIR)/ChuYouYun/Library/Baidu-DocReader-SDK-iOS-2/vendor/lib",
 					"$(PROJECT_DIR)/ChuYouYun/Library/Baidu-DocReader-SDK-iOS-2-2/vendor/lib",
 					"$(PROJECT_DIR)/ChuYouYun/Tool(工具)/JVSRSAHandler/openssl/lib",
+					"$(PROJECT_DIR)/ChuYouYun/Library/Baidu-DocReader-SDK-iOS-2.3.0/vendor/lib",
 				);
 				MACH_O_TYPE = mh_execute;
 				ONLY_ACTIVE_ARCH = NO;
@@ -12692,6 +12702,7 @@
 					"\"$(SRCROOT)/ChuYouYun/Library/umeng_ios_social_sdk_5.2-2.1_arm64_custom/UMSocial_Sdk_Extra_Frameworks/SinaSSO/libWeiboSDK.a\"",
 					"\"$(SRCROOT)/ChuYouYun/Library/umeng_ios_social_sdk_5.2-2.1_arm64_custom/UMSocial_Sdk_Extra_Frameworks/SinaSSO/libSocialSinaSSO.a\"",
 					"$(inherited)",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ZhiYicx.YunKeTang;
 				PRODUCT_NAME = Eduline;
@@ -12699,7 +12710,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "armv7s armv7 arm64";
+				VALID_ARCHS = "armv7s armv7 arm64 armv6 i386/x86_64";
 			};
 			name = Release;
 		};

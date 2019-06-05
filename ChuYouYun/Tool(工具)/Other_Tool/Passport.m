@@ -423,7 +423,11 @@
 //}
 
 - (void)adapterOfIOS11With:(UITableView *)tableView {
-    tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    if (@available(iOS 11.0, *)) {
+        tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+        // Fallback on earlier versions
+    }
     tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
     tableView.scrollIndicatorInsets = tableView.contentInset;
     
@@ -434,7 +438,11 @@
 
 
 - (void)adapterOfIOS11With:(UITableView *)tableView withHight:(NSInteger)hight {
-    tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    if (@available(iOS 11.0, *)) {
+        tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+        // Fallback on earlier versions
+    }
     tableView.contentInset = UIEdgeInsetsMake(-hight, 0, 0, 0);
     tableView.scrollIndicatorInsets = tableView.contentInset;
     

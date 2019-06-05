@@ -1566,9 +1566,12 @@
 //百度文档
 - (void)addBaiDuDoc {
     
-    self.reader = [[BCEDocumentReader alloc] initWithFrame:CGRectMake(0, 0, MainScreenWidth, 210 * WideEachUnit)];
-    self.reader.delegate = self;
-    [self.view addSubview:self.reader];
+    if (self.reader == nil) {
+        self.reader = [[BCEDocumentReader alloc] initWithFrame:CGRectMake(0, 0, MainScreenWidth, 210 * WideEachUnit)];
+        self.reader.delegate = self;
+        [self.reader setFontSize:1];
+        [self.view addSubview:self.reader];
+    }
     
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
     [dict setObject:[_baiDuDocDict stringValueForKey:@"docId"] forKey:@"docId"];
@@ -1578,19 +1581,18 @@
     [dict setObject:[_seleCurrentDict stringValueForKey:@"title"] forKey:@"title"];
     [dict setObject:@"1" forKey:@"startPageNum"];
     [dict setObject:@"6" forKey:@"totalPageNum"];
-//    NSDictionary* parameters = @{
-//                                 BDocPlayerSDKeyDocID: @"<docId>",
-//                                 BDocPlayerSDKeyToken: @"<token>",
-//                                 BDocPlayerSDKeyHost: @"<host>",
-//                                 BDocPlayerSDKeyDocType: @"<docType>",
-//                                 BDocPlayerSDKeyTotalPageNum: @"<totalPageNum>",
-//                                 BDocPlayerSDKeyDocTitle: @"<title>",
-//                                 BDocPlayerSDKeyPageNumber : @""
-//                                 };
+    NSDictionary* parameters = @{
+                                 BDocPlayerSDKeyDocID: [_baiDuDocDict stringValueForKey:@"docId"],
+                                 BDocPlayerSDKeyToken: [_baiDuDocDict stringValueForKey:@"token"],
+                                 BDocPlayerSDKeyHost: [_baiDuDocDict stringValueForKey:@"host"],
+                                 BDocPlayerSDKeyDocType: [_baiDuDocDict stringValueForKey:@"format"],
+                                 BDocPlayerSDKeyTotalPageNum: @"6",
+                                 BDocPlayerSDKeyDocTitle: [_seleCurrentDict stringValueForKey:@"title"],
+                                 };
     
     
     NSError* error;
-    [self.reader loadDoc:dict error:&error];
+    [self.reader loadDoc:parameters error:&error];
     
     
     
@@ -1601,7 +1603,9 @@
 }
 
 - (void)docLoadingEnded:(NSError*)error {
-    
+    if (error) {
+        NSLog(@"%@",error);
+    }
 }
 
 

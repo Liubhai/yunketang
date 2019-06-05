@@ -16,4 +16,7 @@
 + (NSDictionary *)YunKeTang_Api_Tool_WithJson:(NSString *)dataStr;
 + (NSString *)YunKeTang_GetFullUrl:(NSString *)string;
 
+// 解析接口数据,先解析成json 然后判断 data 里面数据 如果数据正常,则返回 data 里面的数据 ,如果data 里面还有密文 那就再解密在返回json类型数据
++ (id)YunKeTang_Api_Tool_GetDecodeStrFromData:(id)responseObject;
+
 @end

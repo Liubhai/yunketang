@@ -105,24 +105,13 @@ typedef NS_ENUM(NSUInteger, BCEDocumentDownloadErrorCode) {
 
 
 /**
- *  @brief 指定用户名和代理进行初始化。在没有账户系统时，用户可指定默认值。文档数据存储在SDK默认存储路径Cache目录。
+ *  @brief 指定用户名和代理进行初始化。在没有账户系统时，可指定默认值。
  *  @param user     用户名。
  *  @param delegate 代理。
  *  @return 下载管理器。
  */
 - (instancetype)initWithUser:(NSString*)user
                     delegate:(id<BCEDocumentDownloaderDelegate>)delegate;
-
-/**
- *  @brief 指定用户名、代理和存储路径进行初始化。在没有账户系统时，用户可指定默认值。存储路径为空时，文档数据存储在SDK默认存储路径Cache目录下。
- *  @param user     用户名。
- *  @param delegate 代理。
- *  @param path     文档数据存储路径。
- *  @return 下载管理器。
- */
-- (instancetype)initWithUser:(NSString*)user
-                    delegate:(id<BCEDocumentDownloaderDelegate>)delegate
-                     storage:(NSString*)path;
 
 /**
  *  @brief 冻结或者解除冻结。冻结后将不调度处于等待状态的任务。

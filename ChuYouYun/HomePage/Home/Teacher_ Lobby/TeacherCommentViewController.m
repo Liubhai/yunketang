@@ -120,9 +120,9 @@
 }
 
 - (void)addTableView {
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, MainScreenWidth, MainScreenHeight * 10 - 64) style:UITableViewStyleGrouped];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, MainScreenWidth, MainScreenHeight * 2 + 500 * WideEachUnit) style:UITableViewStyleGrouped];
     _tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
-    _tableView.scrollEnabled = NO;
+    _tableView.scrollEnabled = YES;
     _tableView.delegate = self;
     _tableView.dataSource = self;
 //    _tableView.rowHeight = 85 * WideEachUnit;
@@ -134,6 +134,11 @@
 //    [_tableView headerBeginRefreshing];
     //上拉加载
     [_tableView addFooterWithTarget:self action:@selector(footerRefreshing)];
+    //iOS 11 适配
+    if (currentIOS >= 11.0) {
+        Passport *ps = [[Passport alloc] init];
+        [ps adapterOfIOS11With:_tableView];
+    }
 }
 
 
@@ -452,6 +457,5 @@
     }];
     [op start];
 }
-
 
 @end
